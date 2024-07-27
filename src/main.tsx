@@ -5,12 +5,25 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom"
-import App from "./App"
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <App />,
+        lazy: () => import("./routes/root"),
+        children: [
+            {
+                index: true,
+                lazy: () => import("./routes/index"),
+            },
+            {
+                path: "login",
+                lazy: () => import("./routes/login"),
+            },
+            {
+                path: "callback",
+                lazy: () => import("./routes/callback"),
+            },
+        ],
     },
 ])
 
