@@ -2,9 +2,8 @@ import React from "react"
 import "./styles.css"
 import { ThemeProvider } from "@/components/theme/provider"
 import Reveal from "reveal.js"
-import Upload from "@/components/upload/upload"
-import { csvParser, networkGraphPresenter } from "@/components/upload/csvParser"
 import { Command } from "@/components/command/Command"
+import BlockSuiteEditor from "@/components/BlockSuiteEditor"
 
 const App: React.FC = () => {
 
@@ -28,7 +27,7 @@ const App: React.FC = () => {
     return (
         <ThemeProvider defaultTheme="dark" storageKey="observatory-theme">
             <section>
-                <Upload parser={csvParser} presenter={networkGraphPresenter} />
+                <BlockSuiteEditor />
                 <Command />
             </section>
         </ThemeProvider>

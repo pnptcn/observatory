@@ -10,6 +10,9 @@
     "tauri": "tauri"
   },
   "dependencies": {
+    "@blocksuite/blocks": "^0.16.0-canary-202407261701-bbdf12e",
+    "@blocksuite/presets": "^0.16.0-canary-202407261701-bbdf12e",
+    "@blocksuite/store": "^0.16.0-canary-202407261701-bbdf12e",
     "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-alert-dialog": "^1.1.1",
@@ -79,6 +82,7 @@
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.166.1",
     "vaul": "^0.9.1",
+    "yjs": "^13.6.18",
     "zod": "^3.23.8"
   },
   "devDependencies": {
