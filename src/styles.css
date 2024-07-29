@@ -1,2 +1,6 @@
 @import url("/node_modules/reveal.js/dist/reveal.css");
 @import url("/node_modules/reveal.js/dist/theme/black.css");
+
+.reveal .slides {
+    text-align: left;
+}

@@ -19,7 +19,8 @@ const App: React.FC = () => {
             keyboard: false,
             previewLinks: true,
             transition: "convex",
-            display: "flex"
+            display: "flex",
+            disableLayout: true
         })
         deck.current.initialize()
     }, [])
